@@ -8,7 +8,7 @@ You can find me on...
 - [Stack Overflow][stackoverflow]
 - [Forrst][forrst]
 
-I've also been known to stalk the underbelly of the internet ([irc](irc)) as `zeekay`.
+I've also been known to stalk the [underbelly of the internet][irc] as `zeekay`.
 
 [twitter]: https://twitter.com/zeekay
 [github]: https://github.com/zeekay
