@@ -46,6 +46,7 @@ require.define(["/app","d41b78b6c8"], function (require, module, exports) {(func
         },
         projects: function() {
           $.getJSON("https://api.github.com/users/zeekay/repos", function(data) {
+            data.sort(function(a,b){return b.watchers - a.watchers});
             template = require("996b0244a6");
             $("section").html(template({
               projects: data
