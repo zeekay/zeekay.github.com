@@ -6,8 +6,8 @@ module.exports = {
     },
     projects: function() {
       $.getJSON('https://api.github.com/users/zeekay/repos', function(data) {
+        data.sort(function(a,b) { return b.watchers - a.watchers });
         template = require('./templates/projects');
-        window.data = data;
         $('section').html(template({projects: data}));
       });
     }

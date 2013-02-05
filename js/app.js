@@ -74,7 +74,7 @@ buf.push('<ul>');
 
 buf.push('<li><ul><li><a');
 buf.push(attrs({ 'href':(project.homepage) }, {"href":true}));
-buf.push('>' + escape((interp = project.name) == null ? '' : interp) + '</a></li><li>watchers: ' + escape((interp = project.watchers) == null ? '' : interp) + '</li><li>forks: ' + escape((interp = project.forks) == null ? '' : interp) + '</li><li>updated: ' + escape((interp = project.updated_at) == null ? '' : interp) + '</li></ul></li>');
+buf.push('>' + escape((interp = project.name) == null ? '' : interp) + '</a></li><li>watchers: ' + escape((interp = project.watchers) == null ? '' : interp).split('T')[0] + '</li><li>forks: ' + escape((interp = project.forks) == null ? '' : interp) + '</li><li>updated: ' + escape((interp = project.updated_at) == null ? '' : interp) + '</li></ul></li>');
     }
   } else {
     for (var $index in projects) {
